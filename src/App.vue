@@ -1,26 +1,77 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main>
+    <navbar/>
+    <Home />
+    <Teachers />
+    <Reviews />
+    <Contact/>
+    <Footer/>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapActions } from "vuex"
+import navbar from "@/components/navbar";
+import Teachers from "@/views/Teachers";
+import Reviews from "@/views/Reviews";
+import Contact from "@/views/Contact";
+import Footer from "@/views/Footer";
+import Home from "@/views/Home";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Home,
+    Footer,
+    Contact,
+    Reviews,
+    Teachers,
+    navbar
+  },
+  methods: {
+    ...mapActions(['CHANGE_WINDOW_WIDTH']),
+    changeWindowWidth() {
+      this.CHANGE_WINDOW_WIDTH(window.innerWidth)
+    }
+  },
+  mounted() {
+    this.changeWindowWidth()
+    window.addEventListener('resize', this.changeWindowWidth)
+  },
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    max-width: 425px !important;
+  }
+  @media screen and (max-width: 425px) {
+    max-width: 375px !important;
+  }
+  @media screen and (max-width: 375px) {
+    max-width: 320px !important;
+  }
+  @media screen and (max-width: 320px) {
+    width: 100% !important;
+  }
+
 }
 </style>

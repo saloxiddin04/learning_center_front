@@ -2,6 +2,7 @@
   <main>
     <navbar/>
     <Home />
+    <Courses/>
     <Teachers />
     <Reviews />
     <Contact/>
@@ -17,10 +18,12 @@ import Reviews from "@/views/Reviews";
 import Contact from "@/views/Contact";
 import Footer from "@/views/Footer";
 import Home from "@/views/Home";
+import Courses from "@/views/Courses";
 
 export default {
   name: 'App',
   components: {
+    Courses,
     Home,
     Footer,
     Contact,
@@ -58,6 +61,7 @@ body {
   overflow-x: hidden;
 }
 .container {
+  max-width: 1200px;
   margin: 0 auto;
 
   @media screen and (max-width: 768px) {

@@ -2,12 +2,11 @@
   <section class="home min-h-screen" id="home">
     <Swiper
         :slides-per-view="setSliderPerView"
-        :space-between="0"
         :loop="true"
         :autoplay="{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
-          }"
+         }"
         :modules="[Autoplay]"
         class="h-full"
     >

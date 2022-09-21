@@ -1,11 +1,11 @@
 <template>
   <section class="contact py-10" id="contact">
     <div class="container">
-      <div class="parent flex justify-between items-center">
-        <div class="left w-1/2 aspect-square">
+      <div class="parent flex md:flex-col justify-between items-center lg:flex">
+        <div class="left w-1/2 aspect-square md:w-full">
           <img :src="image" alt="" class="w-full h-full object-cover">
         </div>
-        <div class="right w-1/2">
+        <div class="right w-1/2 md:w-full">
           <form @submit.prevent="sendMessage" class="w-full h-full flex flex-col gap-8">
             <div class="flex flex-col">
               <label for="name">First Name</label>

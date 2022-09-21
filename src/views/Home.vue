@@ -2,7 +2,6 @@
   <section class="home min-h-screen" id="home">
     <Swiper
         :slides-per-view="setSliderPerView"
-        :loop="true"
         :autoplay="{
             delay: 2000,
             disableOnInteraction: false,
@@ -11,7 +10,7 @@
         class="h-full"
     >
       <swiper-slide v-for="img in images" :key="img._id">
-        <img class="w-full h-screen object-cover" :src="CreateUrl(img.image)" alt="hero-image">
+        <img v-if="img.image" class="w-full h-screen object-cover" :src="CreateUrl(img.image)" alt="hero-image">
       </swiper-slide>
     </Swiper>
   </section>

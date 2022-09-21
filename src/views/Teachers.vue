@@ -5,7 +5,6 @@
       <swiper
           :slides-per-view="setSliderPerView"
           :space-between="35"
-          :loop="true"
           :pagination="true"
           :autoplay="{
             delay: 2500,

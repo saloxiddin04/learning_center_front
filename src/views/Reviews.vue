@@ -6,7 +6,6 @@
           :slidesPerView="setSliderPerView"
           :spaceBetween="30"
           :freeMode="true"
-          :loop="true"
           :pagination="{
             clickable: true,
           }"

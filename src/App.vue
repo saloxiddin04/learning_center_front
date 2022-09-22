@@ -57,6 +57,18 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C18E61;
+  border-radius: 5px;
+}
+
 body {
   overflow-x: hidden;
 }

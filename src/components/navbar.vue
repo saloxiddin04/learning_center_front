@@ -42,6 +42,10 @@ export default {
           link: '#home'
         },
         {
+          text: 'About',
+          link: '#about'
+        },
+        {
           text: 'Courses',
           link: '#courses'
         },

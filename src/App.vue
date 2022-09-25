@@ -2,6 +2,7 @@
   <main>
     <navbar/>
     <Home />
+    <About/>
     <Courses/>
     <Teachers />
     <Reviews />
@@ -19,10 +20,12 @@ import Contact from "@/views/Contact";
 import Footer from "@/views/Footer";
 import Home from "@/views/Home";
 import Courses from "@/views/Courses";
+import About from "@/views/about";
 
 export default {
   name: 'App',
   components: {
+    About,
     Courses,
     Home,
     Footer,

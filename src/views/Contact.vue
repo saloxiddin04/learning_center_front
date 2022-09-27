@@ -62,7 +62,7 @@ export default {
       inputData: {
         firstName: '',
         lastName: '',
-        number: '+998',
+        number: +998,
       },
       select: this.courses[0]
     }
@@ -95,7 +95,7 @@ export default {
       alert("Thank for choosing and i'll call you soon")
       this.inputData.firstName = ''
       this.inputData.lastName = ''
-      this.inputData.number = '+998'
+      this.inputData.number = +998
       this.select = this.courses[0]
     }
   },

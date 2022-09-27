@@ -3,8 +3,9 @@
     <div class="container">
       <nav>
         <div class="logo">
-          <img class="scale-125 object-cover" src="../assets/images/logo.png" alt="">
-          <span class="uppercase text-orange-400">saxovat ta'lim</span>
+<!--          <img class="scale-125 object-cover" src="../assets/images/logo.png" alt="">-->
+<!--          <span class="uppercase text-orange-400">saxovat ta'lim</span>-->
+          <h1 class="uppercase">your logo</h1>
         </div>
 
         <div class="burger" @click="is_open = !is_open" v-if="is_mobile">

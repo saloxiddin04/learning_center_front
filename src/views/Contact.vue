@@ -62,9 +62,9 @@ export default {
       inputData: {
         firstName: '',
         lastName: '',
-        number: +998,
+        number: '+998',
       },
-      select: this.courses[0]
+      select: this.courses[0],
     }
   },
   components: {
@@ -76,7 +76,7 @@ export default {
       msg += `First Name: ${this.inputData.firstName} %0A`
       msg += `Last Name: ${this.inputData.lastName} %0A`
       msg += `Phone: ${this.inputData.number} %0A`
-      msg += `Course: ${this.select}`
+      msg += `Course: ${this.select} %0A`
 
       if (this.inputData.firstName.length < 5 ||
           this.inputData.lastName.length < 6 ||
@@ -95,7 +95,7 @@ export default {
       alert("Thank for choosing and i'll call you soon")
       this.inputData.firstName = ''
       this.inputData.lastName = ''
-      this.inputData.number = +998
+      this.inputData.number =  '+998'
       this.select = this.courses[0]
     }
   },

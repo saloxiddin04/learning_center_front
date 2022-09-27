@@ -31,7 +31,7 @@
               <label for="number">Your Number</label>
               <input
                   id="number"
-                  type="number"
+                  type="tel"
                   placeholder="Your number"
                   v-model="inputData.number"
                   class="py-3 px-2 border-gray border rounded focus:outline-brand"

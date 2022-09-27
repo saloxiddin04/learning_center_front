@@ -103,7 +103,7 @@ export default {
     return {
       bot_token: '5110756390:AAHiOofM6GqVOxG78ehk3nH3MKKgN_0nG2k',
       chat_id: 1393665338,
-      courses: ['Select course', 'Math', 'Russian']
+      courses: ['Select course', 'Math', 'Russian', 'General English', 'IELTS', 'Arabic Language']
     }
   }
 }

@@ -75,7 +75,7 @@ export default {
       let msg = ``
       msg += `First Name: ${this.inputData.firstName} %0A`
       msg += `Last Name: ${this.inputData.lastName} %0A`
-      msg += `Phone: ${this.inputData.number} %0A`
+      msg += `Phone: ${&#43; + this.inputData.number} %0A`
       msg += `Course: ${this.select} %0A`
 
       if (this.inputData.firstName.length < 5 ||
